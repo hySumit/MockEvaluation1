@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style>
+        .grandfather{
+            display:flex;
+            justify-content:flex-start;
+            border: 2px dotted black;
+        }
+        .father,.uncle{
+            margin: 10px;
+            border: 2px dotted rgb(0, 0, 0);
+            /* width: 100px; */
+        }
+        .grandfather>.father{
+            height: 700px;
+            width: 600px;
+        }
+        .father>.person{
+            margin-left: 40px;
+            border: 2px dotted rgb(0, 0, 0);
+            display: flex;
+            height: 600px;
+            width: 375px;
+            /* justify-content: ; */
+        }
+        .father>.person>p{
+            margin-right: 10px;
+        }
+        .father>.person>.children{
+            margin: 20px;
+            border: 1px solid black;
+            width: 80px;
+            
+            justify-content: space-between;
+        }
+        .father>.person>:last-child>div {
+            text-align: center;
+            
+            margin: 10px;
+            
+            border: 3px solid black;
+        }
+
+        .children>div{
+            font-size: 30px;
+            /* border: 2px solid red; */
+        }
+        .uncle{
+            /* display: flex; */
+            height: 700px;
+            width: 600px;
+            text-align: center;
+        }
+        .uncle>.person{
+            margin: 10px;
+            border: 2px dotted black;
+            /* height: 50px; */
+            width: 575px;
+        }
+        .uncle>.person>.children{
+            border: 1px solid black;
+            margin: 20px;
+            margin-top: 30px;
+            /* height: 30px; */
+            box-shadow: rgba(100, 100, 111, 0.2) 10px 7px 30px 0px;
+        }
+        .uncle>.person>.children>div{
+           margin: 10px;
+        }
+        .inside{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            border: 1px dotted black;
+
+        }
+        /* .uncle>.person */
+
+    </style>
+    <title>Mock EValuation 1</title>
+  </head>
+  <body>
+    <div class="grandfather">
+        <!-- grandfather -->
+        <p>Grandfather</p>
+
+      <div class="father">
+        <p>Father</p>
+
+        <div class="person">
+            <p>person</p>
+
+          <div class="children"><p>Child 1</p></div>
+
+          <div class="children"><p>Child 2</p></div>
+
+            <div class="children">
+                <p>Child 3</p>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+          </div>
+
+        </div>
+
+    </div>
+
+    <div class="uncle">
+        <p>Uncle</p>
+
+        <div class="person">
+            <p>Person-1</p>
+        </div>
+
+        <div class="person">
+            <p>Person-2</p>
+            <div class="children" style="height: 50px;"><p>Child-1</p></div>
+
+            <div class="children ">
+                <p>Child-2</p>
+                <div class="inside" style="background-color: orange;">1</div>
+                <div class="inside" style="color: blue;">2</div>
+                <div class="inside" style="background: green;">3</div>
+        </div>
+        <div class="children"><p>Child-3</p></div>
+        </div>
+    <div class="person"><p>Person-3</p></div>
+
+      </div>
+
+    </div>
+
+  </body>
+
+</html>
